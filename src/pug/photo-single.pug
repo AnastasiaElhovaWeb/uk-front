@@ -1,0 +1,60 @@
+extends _layout
+block variables
+block title
+    title Новости
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href='gallery.html') Галерея
+                                li
+                                    a(href='photo-list.html') Фото
+                                li Фотоальбом
+                            h1 Фотоальбом
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+                            p.p2--bold 21 февраля 2020, 10:15
+                            p Работы на территории жилого комплекса:
+                            ul
+                                li утепление вентканалов на кровле дома Богословская д.4/2,
+                                li около дома Богословская д.4/4- восстановление тротуарной плитки,
+                                li около дома Богословская д. 6/2 восстановление газона и отмостки после пожара, уборка территории
+
+                            .slider__container.slider__container__content.mb-6
+                                .slider--content
+                                    .slider__item
+                                        figure.lightbox
+                                            a(href='assets/images/content-1.png' data-toggle='lightbox' data-gallery="gallery" data-footer='Утепление вентканалов на кровле дома Богословская д.4/2')
+                                                img(src='assets/images/content-preview-1.png')
+                                            figcaption Утепление вентканалов на кровле дома Богословская д.4/2
+                                    .slider__item.slider__item--withoutcaption
+                                        figure.lightbox
+                                            a(href='assets/images/content-2.jpg' data-toggle='lightbox' data-gallery="gallery" data-footer='')
+                                                img(src='assets/images/content-preview-2.jpg')
+                                    .slider__item
+                                        figure.lightbox
+                                            a(href='assets/images/content-3.jpg' data-toggle='lightbox' data-gallery="gallery" data-footer='Памятка о Covid-19')
+                                                img(src='assets/images/content-preview-3.jpg')
+                                            figcaption Памятка о Covid-19
+
+                            .share__block.pt-5.mt-3
+                                span.p2--bold Поделиться
+                                .share__icon__list
+                                    a.share__icon.share__icon--vk(href="#")
+                                    a.share__icon.share__icon--fb(href="#")
+                                    a.share__icon.share__icon--ok(href="#")
+

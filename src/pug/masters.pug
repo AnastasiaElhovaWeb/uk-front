@@ -1,0 +1,98 @@
+extends _layout
+block variables
+block title
+    title Мастера
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header.align-items-start
+                        .content__container__header__left
+                            h1 Наши мастера
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+
+                    .p--bold.mb-2 Мастера в доме
+                    .label__list.mb-6
+                        input(type='checkbox' id='check1').form-control--tag
+                        label(for="check1").label.label--tag.mb-1 ЖК «Антей»
+                        input(type='checkbox' id='check2').form-control--tag
+                        label(for="check2").label.label--tag.mb-1 Куйбышева, д. 13
+                        input(type='checkbox' id='check3').form-control--tag
+                        label(for="check3").label.label--tag.mb-1 Народная, д. 53
+                        input(type='checkbox' id='check4').form-control--tag
+                        label(for="check4").label.label--tag.mb-1 ЖК«Вива»
+                        input(type='checkbox' id='check5').form-control--tag
+                        label(for="check5").label.label--tag.mb-1 ЖК«Богемия»
+                        input(type='checkbox' id='check6').form-control--tag
+                        label(for="check6").label.label--tag.mb-1 ЖК «Антей»
+                        input(type='checkbox' id='check7').form-control--tag
+                        label(for="check7").label.label--tag.mb-1 Куйбышева, д. 13
+                        input(type='checkbox' id='check8').form-control--tag
+                        label(for="check8").label.label--tag.mb-1 Народная, д. 53
+                        input(type='checkbox' id='check9').form-control--tag
+                        label(for="check9").label.label--tag.mb-1 ЖК«Вива»
+                        input(type='checkbox' id='check10').form-control--tag
+                        label(for="check10").label.label--tag.mb-1 ЖК«Богемия»
+
+                    .p--bold.mb-2 Специализация
+                    .label__list.mb-6
+
+                        input(type='checkbox' id='check11').form-control--tag
+                        label(for="check11").label.label--tag.mb-1 Бухгалтер
+                        input(type='checkbox' id='check12').form-control--tag
+                        label(for="check12").label.label--tag.mb-1 Монтажник кондиционеров
+                        input(type='checkbox' id='check13').form-control--tag
+                        label(for="check13").label.label--tag.mb-1 Специалист по пластиковым окнам
+                        input(type='checkbox' id='check14').form-control--tag
+                        label(for="check14").label.label--tag.mb-1 Стекольщик
+                        input(type='checkbox' id='check15').form-control--tag
+                        label(for="check15").label.label--tag.mb-1 Слесарь
+                        br
+                        a.document__link__all.mb-2.mt-1.collapse--specializations(data-toggle='collapse' href='#collapseDoc1' aria-expanded='false' aria-controls='collapseDoc1') Показать все специальности
+                        #collapseDoc1.collapse.docblock__content__all
+                            input(type='checkbox' id='check16').form-control--tag
+                            label(for="check16").label.label--tag.mb-1 Бухгалтер
+                            input(type='checkbox' id='check17').form-control--tag
+                            label(for="check17").label.label--tag.mb-1 Монтажник кондиционеров
+                            input(type='checkbox' id='check18').form-control--tag
+                            label(for="check18").label.label--tag.mb-1 Специалист по пластиковым окнам
+                            input(type='checkbox' id='check19').form-control--tag
+                            label(for="check19").label.label--tag.mb-1 Стекольщик
+                            input(type='checkbox' id='check20').form-control--tag
+                            label(for="check20").label.label--tag.mb-1 Слесарь
+                            input(type='checkbox' id='check21').form-control--tag
+                            label(for="check21").label.label--tag.mb-1 Бухгалтер
+                            input(type='checkbox' id='check22').form-control--tag
+                            label(for="check22").label.label--tag.mb-1 Монтажник кондиционеров
+                            input(type='checkbox' id='check23').form-control--tag
+                            label(for="check23").label.label--tag.mb-1 Специалист по пластиковым окнам
+                            input(type='checkbox' id='check24').form-control--tag
+                            label(for="check24").label.label--tag.mb-1 Стекольщик
+                            input(type='checkbox' id='check25').form-control--tag
+                            label(for="check25").label.label--tag.mb-1 Слесарь
+
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Все мастера
+                        .content__container__header__right
+                    .master__list
+
+                        include blocks/masters/_master-1
+                        include blocks/masters/_master-2
+                        include blocks/masters/_master-3
+                        include blocks/masters/_master-4
+
+                        button.btn.btn-primary.mb-6.mt-6(type='submit') Загрузить еще
+
+
+
+
+
+

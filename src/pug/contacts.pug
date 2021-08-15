@@ -1,0 +1,114 @@
+extends _layout
+block variables
+block scripts
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=faa3877b-aaa5-40ba-99a2-e0e2e5269e5d")
+    <script>var mapObjects = [{"lat": 59.9174, "lng": 29.6377, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap1", "title": "ЖК «Цивилизация»", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}]}, {"lat": 59.9452, "lng": 30.2633, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap2", "title": "NEO", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}]}, {"lat": 59.9155, "lng": 30.3464, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap3", "title": "ЖК NEO", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "ул. Архивная, д.11, корп.3"}]}, {"lat": 59.9765, "lng": 30.4299, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap4", "title": "Цивилизация", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}, {"text": "Дальневосточный пр., д.27, корп.3"}]}, {"lat": 59.9137, "lng": 30.3466, "href": "objects-single.html", "linkmap": "#linkMap5", "title": "Цивилизация"}, {"lat": 59.9426, "lng": 30.2782, "image": "assets/images/obj-1.png", "linkmap": "#linkMap6", "title": "ЖК NEO"}, {"lat": 59.9339, "lng": 30.3685, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap7", "title": "Цивилизация", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}]}, {"lat": 59.9280, "lng": 30.4324, "image": "assets/images/obj-1.png", "href": "objects-single.html", "linkmap": "#linkMap8", "title": "Цивилизация", "adreses": [{"text": "Дальневосточный пр., д.25, корп.1"}, {"text": "Дальневосточный пр., д.27, корп.3"}, {"text": "ул. Архивная, д.11, корп.3"}]}];</script>
+    <script>var mapSpecial = {"lat": 59.9568, "lng": 30.3451, "href": "contacts.html"};</script>
+    script(src="assets/js/map.js")
+block title
+    title Контакты
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header.align-items-start
+                        .content__container__header__left
+                            h1 Контакты
+                        .content__container__header__right
+
+        section
+            #map
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Управляющая компания
+                        .content__container__header__right
+
+                    .content__container
+                        .content__container__content
+                            .contacts--main.mt-5
+                                .row.mb-3
+                                    .col-sm-3
+                                        p.p2.mb-0.color--gray Адрес
+                                    .col-sm-9
+                                        p.p2.mb-0 Санкт-Петербург, Кушелевская дорога, дом 3, корпус 3, литера А, помещение 1-Н, комн. 6
+                                .row.mb-3
+                                    .col-sm-3
+                                        p.p2.mb-0.color--gray Часы работы
+                                    .col-sm-9
+                                        p.p2.mb-0 Пн.—Пт. с 9:30 до 18:00 <br> Сб.—Вс. с 11:00 до 16:00
+                                .row.mb-3
+                                    .col-sm-3
+                                        p.p2.mb-0.color--gray Телефоны
+                                    .col-sm-9
+                                        p.p2.mb-0 +7 (812) 325-94-20
+                                .row.mb-3
+                                    .col-sm-3
+                                        p.p2.mb-0.color--gray Эл. почта
+                                    .col-sm-9
+                                        p.p2.mb-0 <a href="mailto:info@etalonserv.ru">info@etalonserv.ru</a>
+
+                            .contacts--images.row.mt-5
+                                .lightbox.lightbox--small.col-md-4.col-sm-6
+                                    a(href='assets/images/contacts-big.jpg' data-toggle='lightbox' data-footer='Фотография входа в здание')
+                                        img.lightbox__image(src='assets/images/contacts-1.jpg')
+                                    a.lightbox__caption(href='assets/images/contacts-big.jpg' data-toggle='lightbox' data-footer='Фотография входа в здание') Вход в здание
+                                .lightbox.lightbox--small.col-md-4.col-sm-6
+                                    a(href='assets/images/contacts-big.jpg' data-toggle='lightbox' data-footer="Схема проезда")
+                                        img(src='assets/images/contacts-2.jpg')
+                                    a.lightbox__caption(href='assets/images/contacts-big.jpg' data-toggle='lightbox' data-footer="Схема проезда") Схема проезда
+
+                            .contacts--sub.mt-5
+                                a.pt-4.pb-4.d-block.link--collapse(data-toggle='collapse' href='#collapseContacts' aria-expanded='false' aria-controls='collapseContacts') Реквизиты компании
+                                #collapseContacts.collapse.contacts__collapse.pb-4
+                                    p.p2 Общество с ограниченной ответственностью «Управляющая компания «Эталон Сервис» (сокращенное: ООО «УК «Эталон Сервис») создано в 2011 году.
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Генеральный директор
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0
+                                                a.lightbox__caption(href="/assets/images/advantage-2.jpg" data-footer-type="info" data-toggle="lightbox" data-footer="Поморин Александр Владимирович") Поморин Александр Владимирович
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray ИНН
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 7802747103
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray ОГРН
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 1117847130356
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Зарегистрировано
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 Межрайонная инспекция Федеральной налоговой службы № 15 по Санкт-Петербургу 11 апреля 2011 года.
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Юридический адрес
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 195220, г. Санкт-Петербург, Кушелевская дорога, дом 3, корпус 3, литера А, помещение 1-Н, комн. 6
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Фактический адрес
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 195220, г. Санкт-Петербург, Кушелевская дорога, дом 3, корпус 3, литера А, помещение 1-Н, комн. 6
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Телефон
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 +7 (812) 325-94-20
+                                    .row.mb-3
+                                        .col-md-3.col-sm-4
+                                            p.p2.mb-0.color--gray Эл. почта
+                                        .col-md-9.col-sm-8
+                                            p.p2.mb-0 <a href="mailto:info@etalonserv.ru">info@etalonserv.ru</a>
+                                    .mt-4
+                                        a.link.link--download(href="#") Скачать реквизиты в PDF
+

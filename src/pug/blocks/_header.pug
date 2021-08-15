@@ -1,0 +1,82 @@
+.b-header__wrap-app
+    .j-header-app-close &#x2715;
+    .b-header__app-block
+        .b-header__app-icon
+            svg(width='48' height='48' viewbox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M0 10C0 4.47715 4.47715 0 10 0H38C43.5228 0 48 4.47715 48 10V38C48 43.5228 43.5228 48 38 48H10C4.47715 48 0 43.5228 0 38V10Z' fill='#DE1F41')
+                path(fill-rule='evenodd' clip-rule='evenodd' d='M8 19.2202V40H31.0682L40 29.0231V8H17.2692L8.08392 19.2885L8 19.2202Z' fill='white')
+        .b-header__app-text
+            .b-header__app-ttl ЛСР
+            .b-header__app-subttl
+                | Мобильное приложение
+                br
+                | для клиентов ЛСР
+    a.b-header__app-btn.j-mobile-app(href='https://redirect.appmetrica.yandex.com/serve/1107302680734235266') Скачать
+
+
+header.header
+    .header__top__background
+        .wrapper
+            .header__top
+                a.header__logo__mobile(href='main.html')
+                    +svg('logo', 'header__logo__img')
+
+                form.form-search
+                    input(type='hidden' name='action' value='searchObjects')
+                    input.form-control.form-control-search.form-control-search--header(type='text' placeholder='Поиск по сайту')
+                    .search-hint.scroll
+
+                .header__lk
+                    a.btn.btn-primary-stroked(href="#") Вход в ЛК
+
+                .header__feedback
+                    .header__feedback__text.p3 Есть вопросы или предложения? Напишите нам!
+                    .btn.btn--feedback(data-toggle='modal', data-target='#feedbackModal') Написать нам
+
+                .hamburger-menu
+                    input#menu__toggle(type='checkbox')
+                    label.menu__btn(for='menu__toggle')
+                        span
+                    ul.menu__box.navbar__nav
+                        li.navbar__item
+                            a.navbar__link(href='about-history.html') О компании
+                        li.navbar__item
+                            a.navbar__link(href='objects.html') Объекты
+                        li.navbar__item
+                            a.navbar__link(href='services.html') Услуги
+                        li.navbar__item
+                            a.navbar__link(href='masters.html') Наши мастера
+                        li.navbar__item
+                            a.navbar__link(href='contacts.html') Контакты
+                        p
+                            a.header__number(href="tel:+7(812)3259420") +7 (812) 325-94-20
+                        p
+                            .btn.btn--feedback(data-toggle='modal', data-target='#feedbackModal') Написать нам
+                        p
+                            a.btn.btn-primary-stroked(href="#") Вход в ЛК
+
+
+    .header__bottom__background
+        .wrapper-inner.wrapper-header
+            .header__bottom.pt-2.pb-2
+                a.header__logo(href='main.html')
+                    +svg('logo', 'header__logo__img')
+
+                nav.header__menu
+                    ul.navbar__nav
+                        li.navbar__item
+                            a.navbar__link(href='about-history.html') О компании
+                        li.navbar__item
+                            a.navbar__link(href='objects.html') Объекты
+                        li.navbar__item
+                            a.navbar__link(href='services.html') Услуги
+                        li.navbar__item
+                            a.navbar__link(href='masters.html') Наши мастера
+                        li.navbar__item
+                            a.navbar__link(href='contacts.html') Контакты
+
+                a.header__number(href="tel:+7(812)3259420") +7 (812) 325-94-20
+
+
+
+

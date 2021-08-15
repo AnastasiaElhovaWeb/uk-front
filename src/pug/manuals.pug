@@ -1,0 +1,77 @@
+extends _layout
+block variables
+block title
+    title База знаний
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.content__container__header__menu.navbar__nav.mb-4
+                                li.navbar__item
+                                    a.navbar__link(href="about-history.html") История компании
+                                li.navbar__item
+                                    a.navbar__link(href="news.html") Новости
+                                li.navbar__item
+                                    a.navbar__link(href="about-info.html") Раскрытие информации
+                                li.navbar__item
+                                    a.navbar__link.active(href="manuals.html") База знаний
+                            h1 База знаний
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+
+                            form.form-search
+                                input(type='hidden' name='action' value='search')
+                                input.form-control.form-control-search.mb-6(type='text' placeholder='Поиск по базе')
+                                .search-hint.scroll
+
+                            .row
+                                .col-sm-6.mb-3
+                                    a.manuals__block(href="manuals-single.html").pt-4.pb-4
+                                        .manuals__block__icon
+                                            img(src="assets/images/manuals-1.png")
+                                        .manuals__block__content.mt-2
+                                            .h3.mb-1 Бухгалтерия
+                                            p.p3 Вопросы по начислением оплаты за услуги, перерасчет, показаниям счетчиков
+                                            .manuals-link Все вопросы
+                                .col-sm-6.mb-3
+                                    a.manuals__block(href="manuals-single.html").pt-4.pb-4
+                                        .manuals__block__icon
+                                            img(src="assets/images/manuals-2.png")
+                                        .manuals__block__content.mt-2
+                                            .h3.mb-1 Прием квартиры
+                                            p.p3 Вопросы по приему квартиры, выдачей ключей от домофона, почтового ящика, мусоросборных камер
+                                            .manuals-link Все вопросы
+                                .col-sm-6.mb-3
+                                    a.manuals__block(href="manuals-single.html").pt-4.pb-4
+                                        .manuals__block__icon
+                                            img(src="assets/images/manuals-3.png")
+                                        .manuals__block__content.mt-2
+                                            .h3.mb-1 Оплата услуг ЖКХ
+                                            p.p3 Вопросы по приему квартиры, выдачей ключей от домофона, почтового ящика, мусоросборных камер
+                                            .manuals-link Все вопросы
+                                .col-sm-6.mb-3
+                                    a.manuals__block(href="manuals-single.html").pt-4.pb-4
+                                        .manuals__block__icon
+                                            img(src="assets/images/manuals-4.png")
+                                        .manuals__block__content.mt-2
+                                            .h3.mb-1 Паркинги
+                                            p.p3 Вопросы по приему квартиры, выдачей ключей от домофона, почтового ящика, мусоросборных камер
+                                            .manuals-link Все вопросы
+                                .col-sm-6.mb-3
+                                    a.manuals__block(href="manuals-single.html").pt-4.pb-4
+                                        .manuals__block__icon
+                                            img(src="assets/images/manuals-5.png")
+                                        .manuals__block__content.mt-2
+                                            .h3.mb-1 Регистрация по месту жительства
+                                            p.p3 Подборка наиболее важных документов по запросу Начисление коммунальных платежей (нормативно–правовые акты, формы, статьи, консультации экспертов и многое другое).
+                                            .manuals-link Все вопросы

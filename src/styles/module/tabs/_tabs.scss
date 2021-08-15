@@ -1,0 +1,146 @@
+.nav-tabs {
+  list-style: none;
+  border: none;
+
+  li:before {
+    display: none;
+  }
+}
+
+.nav-item,
+.nav-item.service__item {
+  max-width: 25%;
+  width: 100%;
+  position: static;
+}
+
+.nav-tabs {
+  .nav-link {
+    border-radius: 0;
+    background-color: $white;
+    border: none;
+    //border-top: 1px solid $lighter;
+    //border-left: 1px solid $lighter;
+
+    &:hover, &.active {
+      border-color: $lighter;
+      background: $lightest;
+    }
+
+    &.active {
+      border-bottom: none !important;
+    }
+  }
+
+  .nav-item:nth-last-child(1) {
+    .nav-link {
+      //border-right: 1px solid $lighter;
+      width: calc(100% + 1px);
+    }
+  }
+
+  .nav-item:nth-child(4n) {
+    .nav-link {
+      //border-right: 1px solid $lighter;
+      width: 100%;
+    }
+  }
+
+  .nav-item:nth-last-child(1), .nav-item:nth-last-child(2), .nav-item:nth-last-child(3), .nav-item:nth-last-child(4) {
+    .nav-link {
+      //border-bottom: 1px solid $lighter;
+    }
+  }
+
+}
+
+
+
+@media (max-width: $desktop) {
+  .nav-tabs {
+    margin-left: - $wrapper-inner-padding;
+    margin-right: - $wrapper-inner-padding;
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: $tablet) {
+  .nav-tabs {
+    margin-left: - $wrapper-inner-tablet-padding;
+    margin-right: - $wrapper-inner-tablet-padding;
+  }
+
+  .nav-item,
+  .nav-item.service__item {
+    max-width: 33.3%;
+  }
+
+  .nav-tabs {
+
+    .nav-item:nth-child(4n) {
+      .nav-link {
+        border-right: none;
+      }
+    }
+
+    .nav-item:nth-last-child(4) {
+      border-bottom: none;
+    }
+
+    .nav-item:nth-last-child(1) {
+      .nav-link {
+        border-right: 1px solid $lighter;
+        width: calc(100% + 1px);
+      }
+    }
+
+    .nav-item:nth-child(3n) {
+      .nav-link {
+        border-right: 1px solid $lighter;
+        width: 100%;
+      }
+    }
+
+  }
+
+
+}
+
+@media (max-width: $mobile) {
+  .nav-tabs {
+    margin-left: - $wrapper-inner-mobile-padding;
+    margin-right: - $wrapper-inner-mobile-padding;
+  }
+
+  .nav-item,
+  .nav-item.service__item {
+    max-width: 100%;
+  }
+
+  .nav-item {
+    .nav-link:nth-child(n),
+    .nav-link:first-child,
+    .nav-link:last-child {
+      border-right: none !important;
+      border-left: none !important;
+      width: 100% !important;
+    }
+  }
+
+  .nav-item:nth-last-child(2), .nav-item:nth-last-child(3) {
+    .nav-link {
+      border-bottom: none;
+    }
+  }
+
+}
+
+.service__item {
+
+  .tab-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}

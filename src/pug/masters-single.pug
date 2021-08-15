@@ -1,0 +1,116 @@
+extends _layout
+block variables
+block title
+    title Мастера
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header.content__container__header--master.align-items-start
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href="masters.html") Наши мастера
+                                li Дмитрий Иванович Василевский
+                            h1 Дмитрий Иванович Василевский
+                            p.p2.mt-2 Электрик, Монтажник кондиционеров, Слесарь, Стекольщик
+
+                            .block__subinfo__list.mt-4
+                                .block__subinfo
+                                    .block__subinfo__title Оценка мастера
+                                    .block__subinfo__content.mt-1
+                                        .rating__container
+                                            .rating__value 4,2
+                                            .rating
+                                                .rating__stars--out
+                                                    +svg('stars', 'rating__stars')
+                                                .rating__stars--in(style="width: 88%")
+                                                    +svg('stars', 'rating__stars')
+                                        a(href="#") 17 отзывов
+                                .block__subinfo
+                                    .block__subinfo__title Мастер работает в
+                                    .block__subinfo__content.mt-1
+                                        a(href="#") ЖК Цивилизация
+                                        a(href="#") Народная, д. 53
+                                        a(href="#") ЖК «НЕО»
+                                        a(href="#") ЖК «Калина Парк-2»
+                                        a(href="#") ЖК Цивилизация
+                                        a(href="#") Народная, д. 53
+                                        a(href="#") ЖК «НЕО»
+                                        a(href="#") ЖК «Калина Парк-2»
+
+                            a.btn.btn-primary.mt-4(data-toggle='modal', data-target='#feedbackModal') Оставить заявку мастеру
+                        .content__container__header__right
+                            img.content__container__header__img(src="assets/images/master-1.png")
+
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Отзывы о мастере
+                        .content__container__header__right
+                    .review__list
+                        .review__item.mt-4.pt-3.pb-3
+                            .review__text.p2 Спасибо! Профессионально все выполнено и молниеносно! Попутно было дано много полезной информации о компьютерах.<br> Будем, в случае серьезных проблем обращаться именно в Вам.
+                            .review__info.mt-2
+                                .review__author
+                                    .review__name.p3 Сергей Иванов
+                                    .rating__container
+                                        .rating__value 5
+                                        .rating
+                                            .rating__stars--out
+                                                +svg('stars', 'rating__stars')
+                                            .rating__stars--in(style="width: 100%")
+                                                +svg('stars', 'rating__stars')
+                                .review__date.p4 Выполнено 24.05.2020
+                        .review__item.mt-4.pt-3.pb-3
+                            .review__text.p2 Вовремя приехал, все сделал ровно и аккуратно. Был в маске и перчатках, обрабатывал поверхности антисептиком.
+                            .review__info.mt-2
+                                .review__author
+                                    .review__name.p3 Николай
+                                    .rating__container
+                                        .rating__value 4,2
+                                        .rating
+                                            .rating__stars--out
+                                                +svg('stars', 'rating__stars')
+                                            .rating__stars--in(style="width: 88%")
+                                                +svg('stars', 'rating__stars')
+                                .review__date.p4 Выполнено 24.05.2020
+                        .review__item.mt-4.pt-3.pb-3
+                            .review__text.p2 Всё хорошо, оцениваю работу специалиста на пять, могу выделить ответственный подход мастера к делу, оплата была уже после работы, специалист консультировала по самому изделию, дала совет, очень ответственно подошла к своему делу, мне очень понравилось. В дальнейшем планируем обращаться к данному специалисту.
+                            .review__info.mt-2
+                                .review__author
+                                    .review__name.p3 Инна Петрова
+                                    .rating__container
+                                        .rating__value 2,5
+                                        .rating
+                                            .rating__stars--out
+                                                +svg('stars', 'rating__stars')
+                                            .rating__stars--in(style="width: 50%")
+                                                +svg('stars', 'rating__stars')
+                                .review__date.p4 Выполнено 24.05.2020
+                        .review__item.mt-4.pt-3.pb-3
+                            .review__text.p2
+                                p Спасибо! Профессионально все выполнено и молниеносно! Попутно было дано много полезной информации о компьютерах.
+                                p Будем, в случае серьезных проблем обращаться именно в Вам.
+                            .review__info.mt-2
+                                .review__author
+                                    .review__name.p3 Сергей Иванов
+                                    .rating__container
+                                        .rating__value 3,5
+                                        .rating
+                                            .rating__stars--out
+                                                +svg('stars', 'rating__stars')
+                                            .rating__stars--in(style="width: 70%")
+                                                +svg('stars', 'rating__stars')
+                                .review__date.p4 Выполнено 24.05.2020
+
+                        button.btn.btn-primary.mb-6.mt-4(type='submit') Загрузить еще отзывы
+

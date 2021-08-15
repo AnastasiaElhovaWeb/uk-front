@@ -1,0 +1,74 @@
+extends _layout
+block variables
+block scripts
+    <script> highlight($('.news__text'), 'Сантехник'); </script>
+block title
+    title Поиск
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li Поиск
+                            h1 Найдено 9 вариантов
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+
+                            form.form-search
+                                input(type='hidden' name='action' value='search')
+                                input.form-control.form-control-search.mb-6(type='text' placeholder='Поиск по сайту')
+                                .search-hint.scroll
+
+                            .h3.mb-3 Услуги
+                            .news__list.search__list.pb-6
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Услуги сантехника любой сложности
+                                        .news__text.mt-1 ...тем, кто хоть раз ремонтировал сантехнику у нас, мы дарим скидку 15% на ремонт любой сантехники. Посмотрите, как наш мастер меняет смеситель ...
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Сантехнические услуги с вызовом сантехника на дом...
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Демонтаж унитаза со сливным бачком
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Установка унитаза типа «Компакт»
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Установка инсталяции (подвесной унитаз)
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+
+                            .h3.mb-3 Наши мастера
+                            .news__list.search__list.pb-6
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Юрий Котов, сантехник ...
+                                        .news__text.mt-1 Профессиональный сантехник, вызов на дом бесплатный. Услуги сантехника в Москве и области, быстро и качественно, цена услуг приятно удивит.
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Иван Кайнелайнен, сантехник ...
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Роман Тармаков, сантехник ...
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе
+                                .news__item.pt-2.pb-2
+                                    .news__content
+                                        a(href="news-single.html").news__title Сергей Петров, сантехник ...
+                                        .news__text.mt-1 Услуги сантехника в СПб цены не кусаются, а радуют. Расценки на все сантехнические работы есть в нашем прайсе

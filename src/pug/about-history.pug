@@ -1,0 +1,98 @@
+extends _layout
+block variables
+block title
+    title История компании
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.content__container__header__menu.navbar__nav.mb-4
+                                li.navbar__item
+                                    a.navbar__link.active(href="about-history.html") История компании
+                                li.navbar__item
+                                    a.navbar__link(href="news.html") Новости
+                                li.navbar__item
+                                    a.navbar__link(href="about-info.html") Раскрытие информации
+                                li.navbar__item
+                                    a.navbar__link(href="manuals.html") База знаний
+                            h1 История компании
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content.order-2
+                            .infoblock__list
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='34557' data-houses='43' data-metres='1200272,3')
+                                    h2.infoblock__title.mb-3#nav-item-1 2020
+                                    .infoblock__content
+                                        p Мы запустили IT-систему «Диспетчерская», основная идея которой — систематизировать и упорядочить работу компании от момента приема заявки от жителя до выполнения работы. Новая «Диспетчерская» система умеет моментально отвечать на множество вопросов: когда в управление поступил новый дом, появился или уволился сотрудник, изменился подрядчик и так далее.
+                                        p Клиентский центр оперативно принимает звонки и распределяет заявки по исполнителям. «Диспетчерская» сделала наш сервис еще более качественным: теперь обращения и заявки по платным сервисам можно оставлять в один клик, а ответы клиент получает гораздо оперативнее.
+                                    include blocks/_infoblock-icons
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='347' data-houses='' data-metres='800004315.2' data-employers='45')
+                                    h2.infoblock__title.mb-3#nav-item-2 2018
+                                    .infoblock__content
+                                    include blocks/_infoblock-icons
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='37' data-houses='99' data-metres='' data-employers='46')
+                                    h2.infoblock__title.mb-3#nav-item-3 2017
+                                    .infoblock__content
+                                    include blocks/_infoblock-icons
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='366' data-houses='' data-metres='84266.63' data-employers='456')
+                                    h2.infoblock__title.mb-3#nav-item-4 2015
+                                    .infoblock__content
+                                        p Клиентский центр оперативно принимает звонки и распределяет заявки по исполнителям. «Диспетчерская» сделала наш сервис еще более качественным: теперь обращения и заявки по платным сервисам можно оставлять в один клик, а ответы клиент получает гораздо оперативнее.
+                                        p
+                                            img(src="assets/images/advantage-2.jpg")
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='345.7' data-houses='437' data-metres='842' data-employers='45333,6')
+                                    h2.infoblock__title.mb-3#nav-item-5 2013
+                                    .infoblock__content
+                                        p Клиентский центр оперативно принимает звонки и распределяет заявки по исполнителям. «Диспетчерская» сделала наш сервис еще более качественным: теперь обращения и заявки по платным сервисам можно оставлять в один клик, а ответы клиент получает гораздо оперативнее.
+                                .infoblock.mb-3.pt-6.pb-6(data-peoples='37' data-houses='' data-metres='8423' data-employers='')
+                                    h2.infoblock__title.mb-3#nav-item-6 2011
+                                    .infoblock__content
+                                        p Мы запустили IT-систему «Диспетчерская», основная идея которой — систематизировать и упорядочить работу компании от момента приема заявки от жителя до выполнения работы. Новая «Диспетчерская» система умеет моментально отвечать на множество вопросов: когда в управление поступил новый дом, появился или уволился сотрудник, изменился подрядчик и так далее.
+
+
+                        .content__container__sidebar.content__container__sidebar--small.order-3
+                            .content__container__sidebar--fixed
+                                #nav-content-info.nav-content
+                                    .h2.pl-3.mb-1
+                                    div
+                                        .d-flex.align-items-top.list-group-item.pl-3.mb-0.d-none
+                                            .col-3.p-0
+                                                +svg('peoples', 'infoblock__icon__img')
+                                            .col-9.pr-0
+                                                div Собственников:
+                                                .infoblock__icon__value(counter='0' data-name='peoples')
+                                        .d-flex.align-items-top.list-group-item.pl-3.mb-0.d-none
+                                            .col-3.p-0
+                                                +svg('houses', 'infoblock__icon__img')
+                                            .col-9.pr-0
+                                                div Домов в управлении:
+                                                .infoblock__icon__value(counter='0' data-name='houses')
+                                        .d-flex.align-items-top.list-group-item.pl-3.mb-0.d-none
+                                            .col-3.p-0
+                                                +svg('metres', 'infoblock__icon__img')
+                                            .col-9.pr-0
+                                                div Квадратных метров:
+                                                .infoblock__icon__value(counter='0' data-name='metres')
+                                        .d-flex.align-items-top.list-group-item.pl-3.mb-0.d-none
+                                            .col-3.p-0
+                                                +svg('employers', 'infoblock__icon__img')
+                                            .col-9.pr-0
+                                                div Сотрудников:
+                                                .infoblock__icon__value(counter='0' data-name='employers')
+
+
+
+                                        //a.list-group-item(href='#nav-item-1') 2020
+
+
+
+

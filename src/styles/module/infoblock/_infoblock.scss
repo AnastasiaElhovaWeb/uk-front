@@ -1,0 +1,139 @@
+.infoblock {
+
+  padding-left: 8.7%;
+  padding-right: 8.7%;
+  background-color: $lightest;
+  border-radius: 4px;
+
+  &__content, &__content p {
+    font-size: 14px;
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.infoblock__icon {
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  &__content {
+    margin-top: $indent-2;
+    width: 100%;
+  }
+
+  &__img {
+    max-width: 64px;
+    max-height: 64px;
+    flex: none;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 160%;
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &__value, &__val {
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0em;
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+}
+
+svg.infoblock__icon__img {
+  fill: none;
+}
+
+.content__container__sidebar .infoblock__icon__img {
+  max-width: 54px;
+  max-height: 54px;
+}
+
+.content__container__sidebar .infoblock__icon__value {
+  white-space: nowrap;
+}
+
+
+
+.infoblock__content ~ .infoblock__icon__list {
+  border-top: 1px solid $light;
+}
+
+.infoblock__icon__item.infoblock__icon__item--main {
+  display: flex;
+  align-items: center;
+  flex-basis: 31.5%;
+
+  .infoblock__icon__content {
+    margin-top: 0;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoblock__icon__value {
+    order: 1;
+  }
+
+  .infoblock__icon__title {
+    order: 2;
+  }
+}
+
+@media (max-width: $desktop) {
+  .infoblock__icon__item {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 50%;
+    margin-bottom: $indent-2;
+  }
+
+  .infoblock__icon__content {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .infoblock__icon__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infoblock__icon__item.infoblock__icon__item--main {
+    flex-basis: 51%;
+    margin: 0 auto;
+  }
+  .infoblock__icon__item.infoblock__icon__item--main ~ .infoblock__icon__item.infoblock__icon__item--main {
+    margin-top: $indent-mobile-4;
+  }
+}
+
+@media (max-width: $mobile) {
+
+  .infoblock__icon__item {
+    flex-basis: 100%;
+    margin-bottom: $indent-mobile-2;
+  }
+
+  .infoblock__icon__item.infoblock__icon__item--main {
+    flex-basis: 100%;
+  }
+
+}

@@ -1,0 +1,61 @@
+extends _layout
+block variables
+block title
+    title Фото
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href='gallery.html') Галерея
+                                li Фото
+                            h1 Фото
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+
+                            .news__list
+                                .news__item.mb-6
+                                    .news__image
+                                        a(href="photo-single.html")
+                                            img(src="assets/images/news-min-1.png")
+                                    .news__content
+                                        a(href="photo-single.html").news__title С Днем Великой Победы!
+                                        .news__text.mb-2.mt-2 Управляющая компания от всей души поздравляет вас с 75-летием Великой Победы!
+                                        .news__date 8 мая 2020
+                                .news__item.mb-6
+                                    .news__image
+                                        a(href="photo-single.html")
+                                            img(src="assets/images/news-min-2.png")
+                                    .news__content
+                                        a(href="photo-single.html").news__title С праздником 1 Мая!
+                                        .news__text.mb-2.mt-2 Дорогие собственники, Управляющая компания искренне поздравляет вас с праздником Весны и Труда – 1 Мая!
+                                        .news__date 1 мая 2020
+                                .news__item.mb-6
+                                    .news__image
+                                        a(href="photo-single.html")
+                                            img(src="assets/images/news-min-2.png")
+                                    .news__content
+                                        a(href="photo-single.html").news__title Опрос на сайте Администрации Санкт-Петербурга
+                                        .news__text.mb-2.mt-2 Традиционно в нашем городе проводятся весенний и осенний месячники по благоустройству.
+                                        .news__date 8 мая 2020
+                                .news__item.mb-6
+                                    .news__content
+                                        a(href="photo-single.html").news__title Опрос на сайте Администрации Санкт-Петербурга
+                                        .news__text.mb-2.mt-2 Традиционно в нашем городе проводятся весенний и осенний месячники по благоустройству.
+                                        .news__date 8 мая 2020
+
+                                button.btn.btn-primary.mb-6(type='submit') Загрузить еще фото
+

@@ -1,0 +1,89 @@
+extends _layout
+block variables
+block title
+    title Главная страница
+block content
+
+    .content
+        section
+            .wrapper.wrapper--slider
+                include blocks/slider/_slider_main
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Услуги
+                        .content__container__header__right
+                            a.link(href="services.html") Все услуги
+
+                    include blocks/slider/_slider_services
+                    .category__list
+                        .category__title Категории услуг
+                        .category__content.content--hide#categoryOne
+                            a.category__item(href="#") Коммунальные услуги
+                            a.category__item(href="#") Юридические услуги
+                            a.category__item(href="#") Бухгалтерские услуги
+                            a.category__item(href="#") Дополнительные услуги
+                            a.category__item(href="#") Техническая эксплуатация
+                            a.category__item(href="#") Ремонтное обслуживание
+                            a.category__item(href="#") Аварийное обслуживание
+                            a.category__item(href="#") Благоустройство и клининг
+                        .category__content__toggle(data-content="#categoryOne") Показать все
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header.mb-3
+                        .content__container__header__left
+                            h2 Управляющая компания
+                        .content__container__header__right
+                            a.link(href="about-history.html") О компании
+                    p.short-text.mb-5 ООО «Управляющая Компания “Эталон Сервис”» одна из ведущих компаний в Санкт-Петербурге на рынке управления и эксплуатации жилой и коммерческой недвижимости.
+
+                    .infoblock.mb-3.pt-5.pb-6
+                        include blocks/_infoblock-icons-index
+
+                    h3.mb-4 Преимущества УК «Эталон-Сервис»
+                    include blocks/slider/_slider_advantages
+
+
+        section.content__background
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Новости
+                        .content__container__header__right
+                            a.link(href="#") Все новости
+                    include blocks/slider/_slider_news
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 База знаний
+                        .content__container__header__right
+                            a.link(href="manuals.html") Вся база знаний
+                    .faq__list.pb-5.pt-5
+                        .faq__item
+                            a.faq__title(href="#") Какие есть варианты оплаты квитанций?
+                            .faq__content Начисления и оплаты
+                        .faq__item
+                            a.faq__title(href="#") Я могу не платить за услуги, если не проживаю в квартире?
+                            .faq__content Коммунальные услуги
+                        .faq__item
+                            a.faq__title(href="#") Когда и как подавать показания счетчиков?
+                            .faq__content Приборы учета
+                    .category__list
+                        .category__title Категории вопросов
+                        .category__content.content--hide#categoryTwo
+                            a.category__item(href="#") Начисления и оплаты
+                            a.category__item(href="#") Коммунальные услуги
+                            a.category__item(href="#") Приборы учета
+                            a.category__item(href="#") Паркинги
+                            a.category__item(href="#") Гарантийные обязательства
+                            a.category__item(href="#") Регистрация по месту жительства
+                            a.category__item(href="#") Страхование квартиры
+                        .category__content__toggle(data-content="#categoryTwo") Показать все

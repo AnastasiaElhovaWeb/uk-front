@@ -1,0 +1,39 @@
+extends _layout
+block variables
+block title
+    title Мастера
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header.content__container__header--master.align-items-start
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href="masters.html") Наши мастера
+                                li Дмитрий Иванович Василевский
+                            h1 Дмитрий Иванович Василевский
+                            p.p2.mt-2 Электрик, Монтажник кондиционеров, Слесарь, Стекольщик
+
+                            .block__subinfo__list.mt-4
+                                .block__subinfo
+                                    .block__subinfo__title Мастер работает в
+                                    .block__subinfo__content.mt-1
+                                        a(href="#") ЖК Цивилизация
+                                        a(href="#") Народная, д. 53
+                                        a(href="#") ЖК «НЕО»
+                                        a(href="#") ЖК «Калина Парк-2»
+                                        a(href="#") ЖК Цивилизация
+                                        a(href="#") Народная, д. 53
+                                        a(href="#") ЖК «НЕО»
+                                        a(href="#") ЖК «Калина Парк-2»
+
+                            a.btn.btn-primary.mt-4(data-toggle='modal', data-target='#feedbackModal') Оставить заявку мастеру
+                        .content__container__header__right
+                            img.content__container__header__img(src="assets/images/master-1.png")
+

@@ -1,0 +1,58 @@
+extends _layout
+block variables
+block scripts
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=faa3877b-aaa5-40ba-99a2-e0e2e5269e5d")
+    <script>var mapObjects = [{"lat": 59.8994, "lng": 30.4523, "image": "assets/images/obj-light-1.png", "title": "ЖК «Цивилизация»", "adres": "Дальневосточный пр., д.27, корп.3", "href": "#linkMap1"}]; </script>
+    script(src="assets/js/map-light.js")
+block title
+    title Объекты
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header.content__container__header--objects.align-items-start
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href="objects.html") Объекты
+                                li Жилой комплекс «Цивилизация»
+                            h1 Жилой комплекс «Цивилизация»
+
+                            .block__subinfo__list.mt-4.mb-6
+                                .block__subinfo
+                                    .block__subinfo__title.p3--bold.color--black--main Адреса домов в управлении
+                                    .block__subinfo__content.mt-1
+                                        p.p3.mt-1.mb-0.color--gray--middle Дальневосточный пр., д.25, корп.1
+                                        p.p3.mt-1.mb-0.color--gray--middle Дальневосточный пр., д.27, корп.3
+                                        p.p3.mt-1.mb-0.color--gray--middle ул. Архивная, д.11, корп.3
+                                        p.p3.mt-1.mb-0.color--gray--middle ул. Дыбенко, д. 4 корп. 1
+                                        p.p3.mt-1.mb-0.color--gray--middle ул. Дыбенко, д. 4 корп. 2
+                                        p.p3.mt-1.mb-0.color--gray--middle ул. Дыбенко, д. 6 корп. 2
+
+                        .content__container__header__right
+                            .content__container__header__img(style="background: url(assets/images/object.jpg) center bottom no-repeat; background-size: cover;")
+
+
+        section.content__background--border
+            .content__section.pt-3.pb-3
+                .wrapper-inner
+                    ul.content__container__submenu.nav.nav-tabs(role='tablist')
+                        li.navbar__item
+                            a.navbar__link.active(href="#contacts" aria-controls='contacts' role='tab' data-toggle="tab") Контакты
+                        li.navbar__item
+                            a.navbar__link(href="#news" aria-controls='news' role='tab' data-toggle="tab") Новости
+                        li.navbar__item
+                            a.navbar__link(href="#info" aria-controls='info' role='tab' data-toggle="tab") Документы
+
+        .tab-content
+            .tab-pane.active#contacts(role='tabpanel')
+                include blocks/objects/_objects-contacts
+            .tab-pane.fade#news(role='tabpanel')
+                include blocks/objects/_objects-news
+            .tab-pane.fade#info(role='tabpanel')
+                include blocks/objects/_objects-info

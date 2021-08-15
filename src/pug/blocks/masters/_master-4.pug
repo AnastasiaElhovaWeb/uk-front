@@ -1,0 +1,40 @@
+.master__item.mt-6
+    .master__item__image__container
+        a(href="masters-single.html")
+            img.master__item__image(src="assets/images/master-default.png")
+    .master__item__content
+        a.master__item__title(href="masters-single.html") Эдуард Сергеевич Видусов
+        p.p3.mt-1 Электрик, Монтажник кондиционеров, Слесарь, Стекольщик
+        .block__subinfo__list
+            .block__subinfo.mb-2
+                .block__subinfo__title Оценка мастера
+                .block__subinfo__content.mt-1
+                    .rating__container.mb-1
+                        .rating__value 4,2
+                        .rating
+                            .rating__stars--out
+                                +svg('stars', 'rating__stars')
+                            .rating__stars--in(style="width: 88%")
+                                +svg('stars', 'rating__stars')
+                    a(href="#") 17 отзывов
+            .block__subinfo
+                .block__subinfo__title Мастер работает в
+                .block__subinfo__content.mt-1
+                    div.mb-1
+                        a(href="#") ЖК Цивилизация
+                    div.mb-1
+                        a(href="#") Народная, д. 53
+                    a.document__link__all.mb-2.mt-1.collapse--objects(data-toggle='collapse' href='#collapseObj2' aria-expanded='false' aria-controls='collapseObj2') Все дома
+                    #collapseObj2.collapse.docblock__content__all
+                        div.mb-1
+                            a(href="#") ЖК «НЕО»
+                        div.mb-1
+                            a(href="#") ЖК «Калина Парк-2»
+                        div.mb-1
+                            a(href="#") ЖК Цивилизация
+                        div.mb-1
+                            a(href="#") Народная, д. 53
+                        div.mb-1
+                            a(href="#") ЖК «НЕО»
+                        div.mb-1
+                            a(href="#") ЖК «Калина Парк-2»

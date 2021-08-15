@@ -1,0 +1,49 @@
+.faq {
+
+  &__item {
+    margin-bottom: $indent-3;
+    padding-left: 70px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: $indent-2;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+      background: url(../image/faq.png) center no-repeat !important;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 160%;
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    margin-top: $indent-1;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 160%;
+    color: $main-black-opacity;
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+}

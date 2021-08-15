@@ -1,0 +1,239 @@
+.modal {
+  padding: 0 !important;
+}
+
+.modal-dialog {
+  max-width: 640px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-content {
+  padding: 48px 71px;
+  border-radius: 8px;
+}
+
+.modal-header {
+  padding: 0;
+  border: none;
+}
+
+.modal-footer {
+  padding: 0;
+  font-size: 14px;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-title {
+  font-family: $font-family-bold;
+  font-size: 24px;
+  line-height: 140%;
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.modal-dialog .close {
+  font-weight: normal;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  outline: none !important;
+}
+
+
+
+@media (max-width: $tablet) {
+
+  .modal-dialog {
+    max-width: 502px;
+  }
+
+  .modal-content {
+    padding: 32px 46px;
+  }
+}
+
+@media (max-width: $mobile) {
+
+  .modal-dialog {
+    max-width: 100%;
+  }
+
+  .modal-content {
+    padding: 32px 15px;
+  }
+}
+
+.ekko-lightbox .modal-dialog {
+  flex: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ekko-lightbox .modal-content {
+  padding: 0 !important;
+}
+
+.ekko-lightbox .modal-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 9px 16px;
+  background-color: $red;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+
+  &.info {
+    color: $main-black;
+    background-color: $white;
+    display: block;
+    position: static;
+  }
+}
+
+.ekko-lightbox-nav-overlay a span {
+  color: $white;
+}
+
+[data-toggle="lightbox"] {
+  outline: none !important;
+}
+
+.lightbox {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(34, 42, 48, 0.1);
+    transition: $gl-transition;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    background: url(../image/sprite.svg#zoom) center no-repeat;
+    background-size: cover;
+  }
+
+  &:hover:before {
+    background-color: rgba(34, 42, 48, 0.6);
+  }
+
+  &:hover:after {
+    background: url(../image/sprite.svg#zoom-hover) center no-repeat;
+    background-size: cover;
+  }
+}
+
+.lightbox__image {
+  border-radius: 4px;
+}
+
+.lightbox.lightbox--small {
+
+  display: flex;
+  flex-direction: column;
+
+  &:before, &:after {
+    display: none;
+  }
+
+  .lightbox__caption {
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 12px;
+    font-size: 14px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -12px;
+      width: 24px;
+      height: 24px;
+      background: url(../image/sprite.svg#icon-zoom) center no-repeat;
+      background-size: cover;
+    }
+
+  }
+}
+
+
+
+
+
+@media (max-width: $tablet) {
+  .lightbox.lightbox--small {
+
+    .lightbox__caption {
+      font-size: 12px;
+    }
+  }
+
+  .ekko-lightbox .modal-footer {
+    font-size: 12px;
+  }
+
+
+}
+
+
+
+@media (max-width: $mobile) {
+
+  .lightbox {
+
+    &:before {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:after {
+      top: 15px;
+      right: 15px;
+      width: 10px;
+      height: 10px;
+      background: url(../image/sprite.svg#zoom-bold) center no-repeat;
+      background-size: cover;
+    }
+
+    &:hover:after {
+      background: url(../image/sprite.svg#zoom-bold-hover) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .lightbox.lightbox--small ~ .lightbox.lightbox--small {
+    margin-top: 16px;
+
+  }
+
+}

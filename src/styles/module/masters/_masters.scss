@@ -1,0 +1,252 @@
+// Masters list
+.master__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.master__item {
+  display: flex;
+  align-items: flex-start;
+  width: 46.4%;
+
+  &__image__container {
+    width: 30.7%;
+    margin-right: 7.8%;
+    flex: none;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 185px;
+    border-radius: 4px;
+  }
+
+  &__content {
+    .block__subinfo__list {
+      display: block;
+    }
+    .block__subinfo__content a {
+      line-height: inherit;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+
+// Доп.информация для мастера
+.block__subinfo {
+
+  &:first-child {
+    //flex: none;
+    margin-right: 70px;
+
+    @media (max-width: $tablet) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-right: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+  }
+
+
+  &__title {
+    font-size: 14px;
+    line-height: 160%;
+    color: $main-black-opacity;
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+
+  &__content {
+    font-size: 14px;
+
+    a {
+      margin-right: 16px;
+      line-height: 175%;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+
+  }
+}
+
+
+
+
+
+
+// Rating
+
+.rating__container {
+  display: flex;
+  align-items: center;
+}
+
+.rating__value {
+  font-family: $font-family-bold;
+  font-size: 14px;
+  line-height: 160%;
+  color: $red;
+  @media (max-width: $tablet) {
+    font-size: 12px;
+  }
+}
+
+.rating__value ~ .rating {
+  margin-left: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  position: relative;
+  top: -2px;
+
+  &__stars {
+    width: 96px;
+    height: 16px;
+  }
+
+  span {
+    line-height: 1;
+  }
+
+  &__stars--out {
+    fill: $light;
+  }
+
+  &__stars--in {
+    fill: $red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+}
+
+
+
+// Reviews
+.review {
+
+  &__item {
+    background-color: $lightest;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 4px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name, &__date {
+    color: $main-black-opacity-middle;
+  }
+
+  &__name {
+    margin-right: 8px;
+  }
+
+  &__text {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+// Media
+
+@media (max-width: $desktop) {
+
+  .review__item {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+}
+
+
+@media (max-width: $tablet) {
+
+  .master__item {
+    width: 100%;
+  }
+
+  .master__item__image__container {
+    max-width: 22%;
+    margin-right: 6.4%;
+  }
+
+  .master__item__content .block__subinfo__list {
+    display: flex;
+  }
+
+  .review__item {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+}
+
+
+@media (max-width: $mobile) {
+
+  .master__item {
+    display: block;
+  }
+
+  .master__item__image__container {
+    max-width: 46%;
+    margin-right: 0;
+  }
+
+  .master__item__image__container ~ .master__item__content {
+    margin-top: 16px;
+  }
+
+  .master__item .block__subinfo {
+    margin-bottom: 0 !important;
+  }
+
+  .review__item {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .review__info {
+    display: block;
+  }
+  .review__author ~ .review__date {
+    margin-top: 8px;
+  }
+}
+

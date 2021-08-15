@@ -1,0 +1,86 @@
+
+ul.nav.nav-tabs.nav-fill(role='tablist').pt-6.pb-6
+
+    li.nav-item.service__item
+        a#service-tab1.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content1' role='tab' aria-controls='service-tab-content1' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab1.png")
+            .service__item__title Коммунальные услуги
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab2.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content2' role='tab' aria-controls='service-tab-content2' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab2.png")
+            .service__item__title Ремонтное обслуживание
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab3.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content3' role='tab' aria-controls='service-tab-content3' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab3.png")
+            .service__item__title Бухгалтерские услуги
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab4.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content4' role='tab' aria-controls='service-tab-content4' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab4.png")
+            .service__item__title Дополнительные услуги
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab5.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content5' role='tab' aria-controls='service-tab-content5' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab5.png")
+            .service__item__title Техническая эксплуатация
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab6.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content6' role='tab' aria-controls='service-tab-content6' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab6.png")
+            .service__item__title Юридические услуги
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab7.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content7' role='tab' aria-controls='service-tab-content7' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab7.png")
+            .service__item__title Аварийное обслуживание
+        .tab-content-container
+    li.nav-item.service__item
+        a#service-tab8.nav-link.pt-3.pb-3.service__tab(data-toggle='tab' href='#service-tab-content8' role='tab' aria-controls='service-tab-content8' aria-selected='false')
+            .service__item__image.mb-2.mx-auto
+                img(src="assets/images/tab8.png")
+            .service__item__title Благоустройство и клининг
+        .tab-content-container
+
+.tab-content.d-none
+    #service-tab-content1.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab1')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content2.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab2')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content3.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab3')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content4.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab4')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content5.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab5')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content6.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab6')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content7.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab7')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+    #service-tab-content8.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab8')
+        .content__background
+            .wrapper-inner
+                include ../slider/_slider_service_cards
+

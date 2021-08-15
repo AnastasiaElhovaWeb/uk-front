@@ -1,0 +1,77 @@
+// COLORS
+
+$red: #DF1E42;
+$red-opacity-middle: rgba(223, 30, 66, 0.75);
+$red-opacity: rgba(223, 30, 66, 0.5);
+
+$blue: #004391;
+$blue-opacity-middle: rgba(0, 67, 145, 0.75);
+$blue-opacity: rgba(0, 67, 145, 0.5);
+
+$black: #000000;
+$main-black: #222A30;
+$main-black-opacity-middle: rgba(34, 42, 48, 0.75);
+$main-black-opacity: rgba(34, 42, 48, 0.5);
+
+$light: #CCD9E3;
+$lighter: #E1EAF0;
+$lightest: #F0F5F9;
+
+$white: #ffffff;
+$white-opacity-middle: rgba(255, 255, 255, 0.75);
+$white-opacity: rgba(255, 255, 255, 0.5);
+
+$gray: #E5E5E5;
+
+//FONTS-SIZE
+$base-font-size-max: 16px;
+$base-font-size: 14px;
+
+//SIZES
+$upper : uppercase;
+$wrapper: 1280px;
+$wrapper-padding: 36px;
+$wrapper-inner: 1209px;
+$wrapper-inner-padding: 107px;
+$wrapper-inner-tablet-padding: 37px;
+$wrapper-inner-mobile-padding: 20px;
+
+//MEDIA-SIZES
+$mobile-tight: 576px;
+$mobile: 669px;
+$tablet-tight: 767px;
+$tablet: 959px;
+$desktop: 1279px;
+
+//MARGINS AND PADDINGS
+$indent-1: 8px;
+$indent-2: 16px;
+$indent-3: 24px;
+$indent-4: 32px;
+$indent-5: 40px;
+$indent-6: 48px;
+
+$indent-mobile-1: 8px;
+$indent-mobile-2: 12px;
+$indent-mobile-3: 16px;
+$indent-mobile-4: 20px;
+$indent-mobile-5: 24px;
+$indent-mobile-6: 32px;
+
+//OPACITY
+$opacity: .5;
+
+//FONTS
+$font-family: Inter-Regular;
+$font-family-bold: Inter-Bold;
+
+
+// GLOBAL SETTINGS
+// -----------------------------------
+
+// Transition  property
+$gl-trs-duration: .3s;
+$gl-trs-function: ease;
+$gl-transition: all 0.2s;
+
+

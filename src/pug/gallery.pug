@@ -1,0 +1,36 @@
+extends _layout
+block variables
+block title
+    title Галерея
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li Галерея
+                            h1 Галерея
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .row.nav-tabs
+                                .col-sm-5
+                                    a.nav-link.text-center.p-4(href="photo-list.html")
+                                        img(src="assets/images/gallery1.jpg")
+                                        h3.mt-2.nav-link__title Наши фотоотчеты
+
+                                .col-sm-5
+                                    a.nav-link.text-center.p-4(href="video-list.html")
+                                        img(src="assets/images/gallery2.jpg")
+                                        h3.mt-2.nav-link__title Наши видеоотчеты

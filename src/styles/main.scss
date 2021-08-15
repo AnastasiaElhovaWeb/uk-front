@@ -1,0 +1,25 @@
+// BASE
+@import 'base/settings';
+
+// LIBS
+@import '../libs/slick/slick.min';
+@import '../libs/slick/slick-theme.min';
+@import '../libs/select2/select2-min';
+@import '../libs/lightbox/bootstrap-lightbox.min';
+//@import '../libs/nice-select/nice-select';
+//@import '../libs/datepicker/datepicker';
+
+//MODULE
+@import 'module/modal/modal';
+@import 'module/form/form';
+@import 'module/infoblock/infoblock';
+@import 'module/navigation/navigation';
+@import 'module/slider/slider';
+@import 'module/tabs/tabs';
+@import 'module/faq/faq';
+@import 'module/category/category';
+@import 'module/news/news';
+@import 'module/masters/masters';
+@import 'module/objects/objects';
+@import 'module/search/search';
+@import 'module/content/content';

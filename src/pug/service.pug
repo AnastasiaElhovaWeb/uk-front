@@ -1,0 +1,62 @@
+extends _layout
+block variables
+block title
+    title Услуги
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href='services.html') Услуги
+                                li Замена водосчетчика
+                            h1 Замена водосчетчика
+                        .content__container__header__right
+                            img.content__container__header__img(src="assets/images/tab2.png")
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+                            p У всех счетчиков есть срок службы и межповерочный интервал, после истечения которого показания уже не принимаются к учету бухгалтерией. Если срок службы у счетчиков достаточно большой, обычно 10-15 лет, то межповерочный интервал короче.
+                            p У счетчиков холодной воды межповерочный интервал до 6 лет, а у горячей — до 4 лет. У счетчиков тепла — в среднем 4 года. Мы предлагаем замену любых видов приборов учета.
+                            figure
+                                img(src='assets/images/service-card4.jpg' alt='Замена счетчика воды')
+                                figcaption Замена счетчика воды
+
+                        .content__container__sidebar
+                            .price__block.pt-3.pb-3
+                                .price__block__wrapper
+                                    .price__block__header.p3.mb-1 Стоимость услуги
+                                    .price__block__value 830 ₽
+                                    a.btn.btn-secondary.mb-2.mt-2(data-toggle='modal', data-target='#feedbackModal') Заказать
+                                    .price__block__content.p4 Диспетчер перезвонит вам в течение рабочего дня и согласут детали
+                            a.banner__block(href="#").mt-3
+                                .banner__block__wrapper
+                                    .banner__block__icon
+                                        img(src="assets/images/icon-banner.png")
+                                    .banner__block__content.p3 <span class="banner-main">Наши мастера</span> будут рады помочь Вам!
+                            .text-right.mt-3
+                                .icon-views 233
+
+
+
+        section.content__background
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            h2 Ремонтное обслуживание
+                        .content__container__header__right
+                            a.link(href="#") Все услуги управляющей компании
+                    include blocks/slider/_slider_service_cards
+
+

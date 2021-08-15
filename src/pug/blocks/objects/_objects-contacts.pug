@@ -1,0 +1,52 @@
+section
+    .content__section.pt-6.pb-6
+        .wrapper-inner
+            .content__container
+                .content__container__content
+                    #map-light
+
+                    .contacts--main
+                        .row.mx-auto.contacts__row.pt-5.pb-5
+                            .col-sm-5.mb-3.p-0
+                                p.p2.p2--bold.mb-1 Начальник службы эксплуатации «Невский»
+                                p.p2.mb-0 Цветков Артемий Алексеевич
+                            .col-sm-6.offset-sm-1.p-0
+                                p.p3.p3--bold.mb-0 Адрес офиса
+                                p.p3.mb-0.color--gray--middle ул. Дыбенко, д.6, корп.2
+                                p.p3.p3--bold.mb-0.mt-2 Часы приема
+                                p.p3.mb-0.color--gray--middle Пн-Чт., с 9:00 до 16:00
+                                p.p3.mb-0.color--gray--middle Пт, с 10:00 до 16:00
+                                p.p3.mb-0.color--gray--middle Сб-Вс, Выходной
+                        .row.mx-auto.contacts__row.pt-5.pb-5
+                            .col-sm-5.mb-3.p-0
+                                p.p2.p2--bold.mb-1 Инженер ЖК «Цивилизация»
+                                p.p2.mb-0 Жиронкин Фёдор Анатольевич
+                            .col-sm-6.offset-sm-1.p-0
+                                p.p3.p3--bold.mb-0  Адрес офиса
+                                p.p3.mb-0.color--gray--middle ул. Дыбенко, д.6, корп.2
+                                p.p3.p3--bold.mb-0.mt-2 Часы приема
+                                p.p3.mb-0.color--gray--middle Пн-Чт., с 9:00 до 16:00
+                                p.p3.mb-0.color--gray--middle Пт, с 10:00 до 16:00
+                                p.p3.mb-0.color--gray--middle Сб-Вс, Выходной
+
+                    .contacts--sub.mt-5
+                        a.pt-2.pb-2.d-block.link--collapse.link--collapse--light(data-toggle='collapse' href='#collapseContacts1' aria-expanded='false' aria-controls='collapseContacts1') Дальневосточный пр., д.27, корп.3
+                        #collapseContacts1.collapse.contacts__collapse.contacts__collapse--light
+                            .row.mx-auto.contacts__row.pt-2.pb-2
+                                a.geolink(href="#")#linkMap1 Показать на карте
+                            include ../_contacts
+                        a.pt-2.pb-2.d-block.link--collapse.link--collapse--light(data-toggle='collapse' href='#collapseContacts2' aria-expanded='false' aria-controls='collapseContacts2') Дальневосточный пр., д.25, корп.1
+                        #collapseContacts2.collapse.contacts__collapse.contacts__collapse--light
+                            .row.mx-auto.contacts__row.pt-2.pb-2
+                                a.geolink(href="#")#linkMap2 Показать на карте
+                            include ../_contacts
+                        a.pt-2.pb-2.d-block.link--collapse.link--collapse--light(data-toggle='collapse' href='#collapseContacts3' aria-expanded='false' aria-controls='collapseContacts3') ул. Архивная, д.11, корп.3
+                        #collapseContacts3.collapse.contacts__collapse.contacts__collapse--light
+                            .row.mx-auto.contacts__row.pt-2.pb-2
+                                a.geolink(href="#")#linkMap3 Показать на карте
+                            include ../_contacts
+                        a.pt-2.pb-2.d-block.link--collapse.link--collapse--light(data-toggle='collapse' href='#collapseContacts4' aria-expanded='false' aria-controls='collapseContacts4') ул. Архивная, д.11, корп.3
+                        #collapseContacts4.collapse.contacts__collapse.contacts__collapse--light
+                            .row.mx-auto.contacts__row.pt-2.pb-2
+                                a.geolink(href="#")#linkMap4 Показать на карте
+                            include ../_contacts

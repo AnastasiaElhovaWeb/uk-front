@@ -1,0 +1,81 @@
+extends _layout
+block variables
+block title
+    title Новости
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.content__container__header__menu.navbar__nav.mb-4
+                                li.navbar__item
+                                    a.navbar__link(href="about-history.html") История компании
+                                li.navbar__item
+                                    a.navbar__link.active(href="news.html") Новости
+                                li.navbar__item
+                                    a.navbar__link(href="about-info.html") Раскрытие информации
+                                li.navbar__item
+                                    a.navbar__link(href="manuals.html") База знаний
+                            h1 Новости
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+
+
+                            form.ajax-form(method='post' novalidate)
+                                input(type="hidden" name="action" value="callback")
+                                .row.mb-6
+                                    .col-sm-3.col-md-2.mb-2
+                                        select.form-control.form-control-select(autocomplete=false name="year")
+                                            option(value="option1") 2020
+                                            option(value="option2") 2019
+                                            option(value="option3") 2018
+                                            option(value="option4") 2017
+                                    .col-sm-4.col-md-3.mb-2
+                                        select.form-control.form-control-select(autocomplete=false name="type")
+                                            option(value="option1") Все новости
+                                            option(value="option2") Раздел 1
+                                            option(value="option3") Раздел 2
+                                            option(value="option4") Раздел 3
+
+                                .news__list
+                                    .news__item.mb-6
+                                        .news__image
+                                            a(href="news-single.html")
+                                                img(src="assets/images/news-min-1.png")
+                                        .news__content
+                                            a(href="news-single.html").news__title С Днем Великой Победы!
+                                            .news__text.mb-2.mt-2 Управляющая компания от всей души поздравляет вас с 75-летием Великой Победы!
+                                            .news__date 8 мая 2020
+                                    .news__item.mb-6
+                                        .news__image
+                                            a(href="news-single.html")
+                                                img(src="assets/images/news-min-2.png")
+                                        .news__content
+                                            a(href="news-single.html").news__title С праздником 1 Мая!
+                                            .news__text.mb-2.mt-2 Дорогие собственники, Управляющая компания искренне поздравляет вас с праздником Весны и Труда – 1 Мая!
+                                            .news__date 1 мая 2020
+                                    .news__item.mb-6
+                                        .news__image
+                                            a(href="news-single.html")
+                                                img(src="assets/images/news-min-2.png")
+                                        .news__content
+                                            a(href="news-single.html").news__title Опрос на сайте Администрации Санкт-Петербурга
+                                            .news__text.mb-2.mt-2 Традиционно в нашем городе проводятся весенний и осенний месячники по благоустройству.
+                                            .news__date 8 мая 2020
+                                    .news__item.mb-6
+                                        .news__content
+                                            a(href="news-single.html").news__title Опрос на сайте Администрации Санкт-Петербурга
+                                            .news__text.mb-2.mt-2 Традиционно в нашем городе проводятся весенний и осенний месячники по благоустройству.
+                                            .news__date 8 мая 2020
+
+                                    button.btn.btn-primary.mb-6(type='submit') Загрузить еще новости
+

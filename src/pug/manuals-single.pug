@@ -1,0 +1,59 @@
+extends _layout
+block variables
+block title
+    title База знаний
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.content__container__header__menu.navbar__nav.mb-4
+                                li.navbar__item
+                                    a.navbar__link(href="about-history.html") История компании
+                                li.navbar__item
+                                    a.navbar__link(href="news.html") Новости
+                                li.navbar__item
+                                    a.navbar__link(href="about-info.html") Раскрытие информации
+                                li.navbar__item
+                                    a.navbar__link(href="manuals.html") База знаний
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href="about-history.html") О компании
+                                li
+                                    a(href="manuals.html") База знаний
+                                li Бухгалтерия
+                            h1 Бухгалтерия
+                        .content__container__header__right
+
+        section
+            .content__section.pt-6.pb-6
+                .wrapper-inner
+                    .content__container
+                        .content__container__content
+
+                            form.form-search
+                                input(type='hidden' name='action' value='search')
+                                input.form-control.form-control-search.mb-6(type='text' placeholder='Поиск по базе')
+                                .search-hint.scroll
+
+                            a.mb-1.pt-2.pb-2.d-block.link--collapse.link--collapse--light.link--collapse--manuals(data-toggle='collapse' href='#collapseManuals1' aria-expanded='false' aria-controls='collapseManuals1') Какие есть варианты оплаты квитанций?
+                            #collapseManuals1.collapse.contacts__collapse.contacts__collapse--light.pb-4.mb-1
+                                include blocks/_manuals.pug
+                            a.mb-1.pt-2.pb-2.d-block.link--collapse.link--collapse--light.link--collapse--manuals(data-toggle='collapse' href='#collapseManuals2' aria-expanded='false' aria-controls='collapseManuals2') Куда платить взнос на капремонт и с какого момента?
+                            #collapseManuals2.collapse.contacts__collapse.contacts__collapse--light.pb-4.mb-1
+                                include blocks/_manuals.pug
+                            a.mb-1.pt-2.pb-2.d-block.link--collapse.link--collapse--light.link--collapse--manuals(data-toggle='collapse' href='#collapseManuals3' aria-expanded='false' aria-controls='collapseManuals3') Какие цифры с счетчика нужно передавать?
+                            #collapseManuals3.collapse.contacts__collapse.contacts__collapse--light.pb-4.mb-1
+                                include blocks/_manuals.pug
+                            a.mb-1.pt-2.pb-2.d-block.link--collapse.link--collapse--light.link--collapse--manuals(data-toggle='collapse' href='#collapseManuals4' aria-expanded='false' aria-controls='collapseManuals4') Как сэкономить на оплате ЖКХ
+                            #collapseManuals4.collapse.contacts__collapse.contacts__collapse--light.pb-4.mb-1
+                                include blocks/_manuals.pug
+                            a.mb-1.pt-2.pb-2.d-block.link--collapse.link--collapse--light.link--collapse--manuals(data-toggle='collapse' href='#collapseManuals5' aria-expanded='false' aria-controls='collapseManuals5') Как получить перерасчет за отопление?
+                            #collapseManuals5.collapse.contacts__collapse.contacts__collapse--light.pb-4.mb-1
+                                include blocks/_manuals.pug

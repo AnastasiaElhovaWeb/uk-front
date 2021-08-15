@@ -1,0 +1,26 @@
+extends _layout
+block variables
+block title
+    title Услуги
+block content
+
+    .content
+
+        section.content__background
+            .content__section.pt-4.pb-4
+                .wrapper-inner
+                    .content__container__header
+                        .content__container__header__left
+                            ul.breadcrumb
+                                li
+                                    a(href='main.html') Главная
+                                li
+                                    a(href='services.html') Услуги
+                                li Ремонтное обслуживание
+                            h1 Ремонтное обслуживание
+                        .content__container__header__right
+                            img.content__container__header__img(src="assets/images/tab2.png")
+
+                    include blocks/slider/_slider_service_cards
+
+

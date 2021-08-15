@@ -1,0 +1,87 @@
+extends _layout
+block variables
+block title
+    title Styleguide
+block content
+
+    .content
+
+        .wrapper-inner
+
+            section
+                h1 Заголовок первого уровня
+                h2 Заголовок второго уровня
+                h3 Заголовок третьего уровня
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien sapien, hendrerit at nisi in, pretium feugiat ex. Suspendisse sodales sodales elit, ac semper sapien tincidunt vitae. Phasellus vel mi tristique, vestibulum libero vitae, blandit ante. Nulla posuere erat id nunc luctus rhoncus. Cras at sapien nec ligula maximus vestibulum. Integer nec felis sapien. Mauris sed hendrerit risus. Nullam ipsum justo, molestie a pulvinar nec, scelerisque ut metus.
+                p Nulla ac euismod massa. Praesent dapibus ante ut tristique vehicula. Etiam semper metus at felis iaculis, ac venenatis risus euismod. Phasellus nec placerat mauris. In et imperdiet urna. Integer sodales nisl quam, et venenatis lorem ultricies vel. Nulla pharetra sapien vitae dolor molestie tincidunt. Nunc lacinia eget turpis feugiat pulvinar. Integer placerat condimentum porta. Nulla fermentum mi ut dignissim facilisis.
+                p Etiam quis ultrices risus. Sed id commodo felis, sit amet pharetra neque. Nunc semper tristique interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac nulla libero. Quisque commodo est at sem imperdiet, at aliquet leo tempor. Duis in rutrum turpis. Nullam efficitur iaculis magna in ultricies. Phasellus ut tortor scelerisque, suscipit augue vitae, suscipit nulla. Phasellus blandit pretium ante sit amet pulvinar. Phasellus eleifend pharetra augue eget porttitor. Praesent dignissim, risus ut aliquam elementum, nulla tortor tempor sem, fermentum efficitur justo tellus ac massa. Etiam vitae velit lacinia, posuere sem et, luctus ex. Pellentesque cursus commodo ante in vestibulum. Aliquam ultrices tortor nec sapien congue, eu tincidunt lacus mollis.
+
+
+            section
+                h3 Ссылки
+                p
+                    a(href="#") Стандартная ссылка
+                p
+                    a.link(href="#") Ссылка со стрелкой
+
+                h3 Ненумерованный список
+
+                ul
+                    li утепление вентканалов на кровле дома Богословская д.4/2,
+                    li около дома Богословская д.4/4- восстановление тротуарной плитки,
+                    li около дома Богословская д. 6/2 восстановление газона и отмостки после пожара, уборка территории
+
+                h3 Нумерованный список
+
+                ol
+                    li утепление вентканалов на кровле дома Богословская д.4/2,
+                    li около дома Богословская д.4/4- восстановление тротуарной плитки,
+                    li около дома Богословская д. 6/2 восстановление газона и отмостки после пожара, уборка территории
+                    ol
+                        li утепление вентканалов на кровле дома Богословская д.4/2,
+                        li около дома Богословская д.4/4- восстановление тротуарной плитки,
+                        li около дома Богословская д. 6/2 восстановление газона и отмостки после пожара, уборка территории
+                    li около дома Богословская д. 6/2 восстановление газона и отмостки после пожара, уборка территории
+
+            section
+                h3 Элементы формы
+
+                p
+                    label(for="inp") Label for input
+                    input.form-control(type="text" placeholder='placeholder')#inp
+
+                p
+                    label(for="sel") Label for select
+                    select.form-control.form-control-select(autocomplete=false)#sel
+                        option(value="option1") Option 1
+                        option(value="option2") Option 2
+                        option(value="option3") Option 3
+                        option(value="option4") Option 4
+
+                p
+                    input.form-control.form-control-checkbox(type="checkbox")#check
+                    label(for="check") Label for checkbox
+                    input.form-control.form-control-checkbox(type="checkbox")#check2
+                    label(for="check2") Label for checkbox
+
+                p
+                    input.form-control.form-control-radio(type="radio")#radio
+                    label(for="radio") Label for radio
+
+                h3 Кнопки
+                p
+                    .btn.btn-primary Primary button
+                    .btn.btn-primary.disabled Primary button: disabled
+                p
+                    .btn.btn-primary-stroked Primary Stroked
+                    .btn.btn-primary-stroked.disabled Primary Stroked: disabled
+                p
+                    input#file.form-control.form-control-file(type='file' name='file')
+                    label(for='file') Прикрепить файл
+                p
+                    .btn.btn-secondary Secondary button
+                    .btn.btn-secondary.disabled Secondary button: disabled
+                p
+                    .btn.btn--feedback Написать нам
+                    .btn.btn--feedback.disabled Написать нам: disabled
+

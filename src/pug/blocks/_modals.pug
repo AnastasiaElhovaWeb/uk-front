@@ -1,0 +1,52 @@
+#feedbackModal.modal.fade(role='dialog')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header.mb-3
+                h4.modal-title Написать нам
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+
+            .modal-body
+
+                form.ajax-form(method='post' novalidate)
+                    input(type="hidden" name="action" value="callback")
+
+                    .form-group.mb-3
+                        label(for="fio") ФИО
+                        input.form-control.w-100(type="text" name="fio" placeholder='ФИО' required)#fio
+                        .invalid-feedback
+                    .form-row
+                        label.w-100 Адрес
+                        .form-group.col-sm-6.col-12.mb-3
+                            input.form-control(type="text" name="street" placeholder='Улица' required)
+                            .invalid-feedback
+                        .form-group.col-sm-4.col-6.mb-3
+                            input.form-control(type="text" name="house" placeholder='Дом' required)
+                            .invalid-feedback
+                        .form-group.col-sm-2.col-6.mb-3
+                            input.form-control(type="text" name="kv" placeholder='Кв' required)
+                            .invalid-feedback
+                    .form-group.mb-3
+                        label(for="phone") Телефон
+                        input.form-control.form-control-phone(type="text" name="phone" placeholder="+7 (999) 999-99-99" required)#phone
+                        .invalid-feedback
+                    .form-group.mb-3
+                        label(for="phone") Сообщение
+                        textarea.form-control(name="message" placeholder='Сообщение' rows="4" required)#message
+                        .invalid-feedback
+                    .form-group.mb-3
+                        input#file-modal.form-control.form-control-file(type='file' name='file')
+                        label(for='file-modal') Прикрепить файл
+                        .invalid-feedback
+                    .form-group.mb-3
+                        input.form-control.form-control-checkbox(type="checkbox" name="agreement" required)#agreement
+                        label.w-100(for="agreement") Cогласен с <a href="#">условиями обработки данных</a>
+                        .invalid-feedback
+
+                    button.btn.btn-primary(type='submit') Подать обращение
+
+
+#callbackModal.modal.fade
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-body
